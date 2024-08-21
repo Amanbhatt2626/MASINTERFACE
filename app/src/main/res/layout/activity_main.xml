@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C421B3F4">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/card"
+        android:layout_marginBottom="20dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_centerInParent="true"
+        android:elevation="40dp"
+        app:cardCornerRadius="40dp"
+        android:id="@+id/card"
+        android:backgroundTint="#E1F1E728"
+
+        >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter first number"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="#C421B3F4"
+            />
+
+        <EditText
+
+            android:id="@+id/input2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter second number"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="#C421B3F4"
+            />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#C421B3F4"
+            />
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtract"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#C421B3F4"/>
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiply"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#C421B3F4"/>
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divide"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#C421B3F4"/>
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+
