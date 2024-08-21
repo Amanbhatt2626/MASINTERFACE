@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+android:fitsSystemWindows="true"
+android:background="#F8E540">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="REGISTER USER"
+    android:layout_centerInParent="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    />
+<androidx.cardview.widget.CardView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    app:cardElevation="30dp"
+    app:cardBackgroundColor="#31C8ED"
+    app:cardCornerRadius="40dp"
+    android:layout_centerInParent="true"
+
+    android:id="@+id/Card"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/editTextNewUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/editTextNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/editTextNewUsername"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/editTextRe_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-Enter Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/editTextNewPassword"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_below="@id/editTextRe_Password"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#F8E540"
+            android:textColor="#000000"
+            android:elevation="10dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="40dp"
+            android:textSize="20sp"
+            android:layout_marginTop="35dp"
+            />
+
+        <Button
+            android:id="@+id/buttonAlredayRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alreday Register"
+            android:layout_below="@id/buttonRegister"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#F8E540"
+            android:textColor="#000000"
+            android:elevation="10dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="40dp"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

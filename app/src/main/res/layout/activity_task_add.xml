@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#31C8ED">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/appbar"
+    android:elevation="20dp"
+    android:background="#F8E540"
+    app:elevation="40dp"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/black"
+        app:subtitleTextColor="@color/black"
+        />
+</com.google.android.material.appbar.AppBarLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recycler"
+    android:layout_above="@+id/linear"
+   android:layout_below="@+id/appbar"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear"
+        android:background="#F8E540"
+        android:elevation="40dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your task"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:backgroundTint="#31C8ED"
+        android:textColor="#000000"
+        android:elevation="10dp"
+        android:textStyle="bold"
+
+        android:textSize="15sp"
+
+        />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
